@@ -10,7 +10,7 @@ const server = http.createServer(app);
 // Configure Socket.IO with proper CORS settings
 const io = socketIo(server, {
   cors: {
-    origin: ["http://localhost:5173", "http://localhost:8080"],
+    origin: ["https://eduviz-learning-platform.vercel.app/", "https://eduvizbackend.onrender.com"],
     methods: ["GET", "POST"],
     credentials: true
   },

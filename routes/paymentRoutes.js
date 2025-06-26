@@ -78,7 +78,7 @@ router.post('/verification', (req, res) => {
     
     if (isAuthentic) {
       return res.redirect(
-        `${process.env.CLIENT_URL || 'http://localhost:5173'}/paymentSuccess?reference=${razorpay_payment_id}`
+        `${process.env.CLIENT_URL || 'https://eduviz-learning-platform.vercel.app/'}/paymentSuccess?reference=${razorpay_payment_id}`
       );
     } else {
       res.status(400).json({
